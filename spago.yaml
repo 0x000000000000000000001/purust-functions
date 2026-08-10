@@ -1,0 +1,26 @@
+package:
+  name: functions
+  dependencies:
+    - prelude
+
+  test:
+    main: Test.Main
+    dependencies:
+      - effect
+      - assert
+      - console
+
+workspace:
+  packageSet:
+    registry: 77.7.0
+  extraPackages:
+    prelude:
+      path: "../purust-prelude"
+    effect:
+      path: "../purust-effect"
+    assert:
+      path: "../purust-assert"
+    console:
+      path: "../purust-console"
+    safe-coerce:
+      path: "../purust-safe-coerce"
